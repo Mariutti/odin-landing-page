@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+header {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 200px;
+    height: 515px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+header p,
+header a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+header .logo {
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+header .header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    gap: 50px
+}
+header .header-main {
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 600px;
+}
+
+header .img-placeholder {
+    height: 250px;
+    max-width: 600px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+
+header button {
+    background-color: #3882F6;
+    padding: 8px 35px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+}

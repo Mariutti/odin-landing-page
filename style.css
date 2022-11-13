@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    
+
+}
+
+body > * {
+    min-width: 60vw;
 }
 
 header {
@@ -17,7 +21,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 200px;
-    height: 515px;
+    height: 515px;    
 }
 
 header h1 {
@@ -41,6 +45,8 @@ header .logo {
 header .header-top {
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    min-width: 60vw;   
 }
 
 header ul {
@@ -59,8 +65,11 @@ header .header-elements {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
     flex: 1;
-    gap: 50px
+    gap: 60px;
+    min-width: 60vw;
+    
 }
 header .header-main {
     flex-wrap: wrap;
@@ -84,7 +93,8 @@ header button {
     padding: 8px 35px;
     margin: 10px;
     border-radius: 8px;
-    color: white;
+    color: #E5E7EB;
+    border: none;
     font-weight: bolder;
     font-size: 17px;
 }
@@ -95,9 +105,8 @@ main .section-three {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 32vh;
     padding: 0 200px;
-    height: 515px;
+    height: 470px;
 }
 
 main .section-one h1 {
@@ -137,4 +146,68 @@ div.grid p {
 
 section.section-two {
     background-color: #E5E7EB;
+    height: fit-content;
+    padding: 110px 300px;
+    display: flex;
+    align-items: center;
+}
+
+section.section-two > blockquote {
+    min-width: 50vw;
+    
+}
+
+section.section-two > blockquote > p.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937; 
+    min-width: 50vw;
+    max-width: 60vw;
+}
+
+section.section-two > blockquote > p.reference {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+section.section-three {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 100px 200px;
+    min-width: 50vw;
+    color: white;
+    
+}
+
+section.section-three div.action {
+    background-color: #3882F6;
+    width: 60vw;
+    min-width: 750px;
+    border-radius: 10px;
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.section-three div button {
+    font-weight: bold;
+    background-color: inherit;
+    height: fit-content;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 25px;    
+}
+
+footer {
+    background: black;
+    color: #E5E7EB;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
